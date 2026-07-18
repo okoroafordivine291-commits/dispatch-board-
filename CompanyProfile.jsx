@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { useJobs } from '../context/JobsContext.jsx'
-import JobCard from '../components/JobCard.jsx'
+import { useJobs } from './JobsContext.jsx'
+import JobCard from './JobCard.jsx'
 
 export default function CompanyProfile() {
   const { name } = useParams()
