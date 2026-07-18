@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { useBookmarks } from '../context/BookmarksContext.jsx'
+import { useBookmarks } from './BookmarksContext.jsx'
 
 export default function Navbar() {
   const { count } = useBookmarks()
