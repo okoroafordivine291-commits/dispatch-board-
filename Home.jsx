@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useJobs } from '../context/JobsContext.jsx'
-import JobCard from '../components/JobCard.jsx'
-import { JobListSkeleton } from '../components/Skeleton.jsx'
+import { useJobs } from './JobsContext.jsx'
+import JobCard from './JobCard.jsx'
+import { JobListSkeleton } from './Skeleton.jsx'
 
 export default function Home() {
   const { jobs, loading } = useJobs()
