@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F1E8;
+  color: #1C1B19;
+}
+
+/* signature: work-order ticket stub */
+.ticket {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(15, 42, 67, 0.15);
+  box-shadow: 0 1px 0 rgba(15, 42, 67, 0.06);
+}
+
+.ticket-stub-line {
+  position: relative;
+  border-left: 2px dashed rgba(15, 42, 67, 0.25);
+}
+
+.ticket-stub-line::before,
+.ticket-stub-line::after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  width: 12px;
+  height: 12px;
+  background: #F5F1E8;
+  border: 1px solid rgba(15, 42, 67, 0.15);
+  border-radius: 50%;
+}
+.ticket-stub-line::before { top: -7px; }
+.ticket-stub-line::after { bottom: -7px; }
+
+/* pushpin bookmark toggle */
+.pushpin {
+  transform: rotate(-8deg);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.pushpin[data-active="true"] {
+  transform: rotate(0deg) scale(1.1);
+}
+
+/* dispatch board texture for hero/dark sections */
+.board-grid {
+  background-image:
+    linear-gradient(rgba(245, 241, 232, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 241, 232, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+:focus-visible {
+  outline: 2px solid #FF6B35;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
