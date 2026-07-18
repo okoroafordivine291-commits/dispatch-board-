@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
-import Home from './pages/Home.jsx'
-import Browse from './pages/Browse.jsx'
-import JobDetail from './pages/JobDetail.jsx'
-import CompanyProfile from './pages/CompanyProfile.jsx'
-import Bookmarks from './pages/Bookmarks.jsx'
+import Navbar from './Navbar.jsx'
+import Footer from './Footer.jsx'
+import Home from './Home.jsx'
+import Browse from './Browse.jsx'
+import JobDetail from './JobDetail.jsx'
+import CompanyProfile from './CompanyProfile.jsx'
+import Bookmarks from './Bookmarks.jsx'
 
 export default function App() {
   return (
