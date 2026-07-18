@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { useJobs } from '../context/JobsContext.jsx'
-import JobCard from '../components/JobCard.jsx'
-import FilterSidebar from '../components/FilterSidebar.jsx'
-import SearchBar from '../components/SearchBar.jsx'
-import { JobListSkeleton } from '../components/Skeleton.jsx'
+import { useJobs } from './JobsContext.jsx'
+import JobCard from './JobCard.jsx'
+import FilterSidebar from './FilterSidebar.jsx'
+import SearchBar from './SearchBar.jsx'
+import { JobListSkeleton } from './Skeleton.jsx'
 
 export default function Browse() {
   const { jobs, loading } = useJobs()
