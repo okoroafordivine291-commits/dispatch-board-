@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { slugifyCompany } from '../utils/helpers.js'
+import { slugifyCompany } from './helpers.js'
 
 export default function CompanyCard({ name, jobCount }) {
   return (
