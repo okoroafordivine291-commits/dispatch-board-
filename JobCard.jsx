@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { useBookmarks } from '../context/BookmarksContext.jsx'
-import { formatJobType, timeAgo, jobTypeCode, slugifyCompany } from '../utils/helpers.js'
+import { useBookmarks } from './BookmarksContext.jsx'
+import { formatJobType, timeAgo, jobTypeCode, slugifyCompany } from './helpers.js'
 
 export default function JobCard({ job }) {
   const { isBookmarked, toggleBookmark } = useBookmarks()
