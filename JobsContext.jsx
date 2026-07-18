@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react'
-import { fetchJobs } from '../services/api.js'
+import { fetchJobs } from './api.js'
 
 const JobsContext = createContext(null)
 
