@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { useJobs } from '../context/JobsContext.jsx'
-import { useBookmarks } from '../context/BookmarksContext.jsx'
-import JobCard from '../components/JobCard.jsx'
+import { useJobs } from './JobsContext.jsx'
+import { useBookmarks } from './BookmarksContext.jsx'
+import JobCard from './JobCard.jsx'
 
 export default function Bookmarks() {
   const { jobs, loading } = useJobs()
