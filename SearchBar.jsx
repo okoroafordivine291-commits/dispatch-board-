@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useDebounce } from '../hooks/useDebounce.js'
+import { useDebounce } from './useDebounce.js'
 
 export default function SearchBar({ initialValue = '', onSearch }) {
   const [value, setValue] = useState(initialValue)
