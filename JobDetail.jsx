@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { useJobs } from '../context/JobsContext.jsx'
-import { useBookmarks } from '../context/BookmarksContext.jsx'
-import { formatJobType, timeAgo, slugifyCompany } from '../utils/helpers.js'
+import { useJobs } from './JobsContext.jsx'
+import { useBookmarks } from './BookmarksContext.jsx'
+import { formatJobType, timeAgo, slugifyCompany } from './helpers.js'
 
 export default function JobDetail() {
   const { id } = useParams()
