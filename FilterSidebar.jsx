@@ -1,4 +1,4 @@
-import { formatJobType } from '../utils/helpers.js'
+import { formatJobType } from './helpers.js'
 
 export default function FilterSidebar({
   locations,
